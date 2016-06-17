@@ -1,1 +1,556 @@
-Comparison
+<html>
+	<head>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<style>
+			body {
+				margin: 0;
+				font-family: sans-serif;
+			}
+			
+			a {
+				text-decoration: none;
+			}
+			
+			a:hover {
+				text-decoration: underline;
+			}
+			
+			.version {
+				font-size: .4em;
+			}
+		
+			table {
+				border-collapse: collapse;
+				margin-top: calc(42px - 1px);
+			}
+			
+			.best {
+				background: #acffac;
+			}
+			
+			.best::after {
+				content: "BEST";
+				color: red;
+				font-weight: bold;
+				display: block;
+			}
+			
+			.nan {
+				background: #ffefef;
+			}
+			
+			.nan::after {
+				content: "✗";
+				display: block;
+			}
+			
+			th, td {
+				width: 20vw;
+				max-width: 20vw;
+				min-width: 20vw;
+				box-sizing: border-box;
+				vertical-align: top;
+				text-align: left;
+			}
+			
+			th:first-child {
+				width: 10vw;
+				max-width: 10vw;
+				min-width: 10vw;
+			}
+			
+			tr:first-child {
+				position: fixed;
+				top: 0px;
+				left: 0px;
+				background: lightgray
+			}
+			
+			tr:first-child th {
+				height: 42px;
+				vertical-align: middle;
+				text-align: center;
+			}
+			
+			tr:first-child th * {
+				vertical-align: middle;
+			}
+
+			ul {
+				padding-left: 1.5em;
+				margin: 0;
+			}
+		</style>
+		<table border="1" cellpadding="5">
+			<tr>
+				<th></th>
+				<th><a href="https://addons.mozilla.org/addon/picknsave">
+					<img src="https://addons.cdn.mozilla.net/user-media/addon_icons/559/559798-32.png">
+					Pick &amp; Save Images <span class="version">1.6</span>
+				</a></th>
+				<th><a href="https://addons.mozilla.org/addon/image-picker">
+					<img src="https://addons.cdn.mozilla.net/user-media/addon_icons/235/235863-32.png">
+					Image Picker <span class="version">1.9.4</span>
+				</a></th>
+				<th><a href="https://addons.mozilla.org/addon/save-images">
+					<img src="https://addons.cdn.mozilla.net/user-media/addon_icons/3/3404-32.png">
+					Save Images <span class="version">1.1.0.3</span>
+				</a></th>
+				<th><a href="https://addons.mozilla.org/addon/downthemall">
+					<img src="https://addons.cdn.mozilla.net/user-media/addon_icons/0/201-32.png">
+					DownThemAll! <span class="version">2.0.19</span>
+				</a></th>
+			</tr>
+			<tr>
+				<th>Multiple Filer &amp; Preference Sets (Profiles)</th>
+				<td class="best">
+					Difference preference sets for saving task can be stored in individual profiles
+				</td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+			</tr>
+			<tr>
+				<th>Save All Images in Page</th>
+				<td class="best">
+					<ul>
+						<li><code>&lt;img&gt;</code> and <code>&lt;input&gt;</code> elements</li>
+						<li><code>blob:</code> images</li>
+						<li>CSS properties:
+							<ul>
+								<li><code>background-image</code></li>
+								<li><code>border-image-source</code></li>
+								<li><code>content</code></li>
+								<li><code>cursor</code></li>
+								<li><code>list-style-image</code></li>
+								<li><code>clip-path</code></li>
+								<li><code>filter</code></li>
+								<li><code>mask</code></li>
+							</ul>
+						</li>
+						<li>CSS rules</li>
+						<li>Pseudo-elements</li>
+						<li>Inline SVG elements</li>
+						<li>Page icons and site icons</li>
+						<li>Responsive images (<code>[srcset]</code>)</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li><code>&lt;img&gt;</code> and <code>&lt;input&gt;</code> elements</li>
+						<li><code>blob:</code> images</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li><code>&lt;img&gt;</code> and <code>&lt;input&gt;</code> elements</li>
+						<li><code>blob:</code> images</li>
+						<li>CSS property:
+							<ul>
+								<li><code>background-image</code></li>
+							</ul>
+						</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li><code>&lt;img&gt;</code> and <code>&lt;input&gt;</code> elements</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<th>Ignore Duplicated Images</th>
+				<td class="best">
+					<ul>
+						<li>Images with the same path</li>
+						<li>Images redirected to the same path</li>
+						<li>Images between pages</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Images with the same path</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Only the images with the same file name</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Images with the same path</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<th>Manually Choose Images</th>
+				<td class="best">
+					<ul>
+						<li>Image preview</li>
+						<li>List the following information:
+							<ul>
+								<li>File name (server suggested name)</li>
+								<li>File size</li>
+								<li>Dimensions</li>
+								<li>Image type (including semi-transparent and animated)</li>
+								<li>Alternate text</li>
+								<li>URL and redirect (show in tooltip)</li>
+							</ul>
+						</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Image preview</li>
+						<li>List the following information:
+							<ul>
+								<li>File name (from URL only)</li>
+								<li>File size (only available if image is loaded and cached)</li>
+								<li>Dimensions (in display only)</li>
+							</ul>
+						</li>
+					</ul>
+				</td>
+				<td class="nan"></td>
+				<td>
+					<ul>
+						<li>List the following information:
+							<ul>
+								<li>File name (from URL only)</li>
+								<li>Alternate text</li>
+								<li>URL</li>
+							</ul>
+						</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<th>Save Images in Multiple Tabs</th>
+				<td class="best">
+					<ul>
+						<li>Manually choose form tabs list</li>
+						<li>Accurately auto-choose matched tabs when "Corresponding Pages" is set, support wildcards and RegExp URL matching</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>To left, to right and all tabs</li>
+						<li>Suggest tabs with similar page title</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>To left, to right and all tabs</li>
+					</ul>
+				</td>
+				<td class="nan"></td>
+			</tr>
+			<tr>
+				<th>Close Tabs after Saving Images</th>
+				<td class="best">✓</td>
+				<td class="best">✓</td>
+				<td class="best">✓</td>
+				<td class="nan"></td>
+			</tr>
+			<tr>
+				<th>One-Click Save All (Silent Mode)</th>
+				<td class="best">✓</td>
+				<td class="nan"></td>
+				<td class="best">✓</td>
+				<td class="best">✓</td>
+			</tr>
+			<tr>
+				<th>Quick Single Saving</th>
+				<td class="nan"></td>
+				<td class="best">
+					<ul>
+						<li>Double-click</li>
+						<li>Drag</li>
+						<li>Ctrl, Alt, Shift + Click</li>
+					</ul>
+				</td>
+				<td class="nan"></td>
+				<td>
+					<ul>
+						<li>Single click (dTa! Selector)</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<th>Firefox UI (Australis) Integration</th>
+				<td class="best">
+					<ul>
+						<li>Icon style matches the default theme of Firefox on all OSs</li>
+						<li>Support Hi-DPI display</li>
+						<li>Support menu panel</li>
+					</ul>
+				</td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+			</tr>
+			<tr>
+				<th>Other Save Modes</th>
+				<td class="best">
+					<ul>
+						<li>Delay</li>
+						<li>Images in view only</li>
+						<li>Selected images only</li>
+					</ul>
+				</td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+			</tr>
+			<tr>
+				<th>Built-In Thumbnail Mapping</th>
+				<td class="best">
+					<ul>
+						<li>Detect hyper-links pointing to original image directly</li>
+						<li>Popular sites and general thumbnail pattern (with <a href="https://addons.mozilla.org/addon/thumbnail-zoom-plus">Thumbnail Zoom Plus</a> installed)</li>
+					</ul>
+				</td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+				<td class="best">
+					<ul>
+						<li>Detect hyper-links pointing to original image directly</li>
+						<li>Popular sites (with <a href="https://addons.mozilla.org/addon/downthemall-anticontainer">DownThemAll! AntiContainer</a> installed)</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<th>User-Defined Thumbnail Mapping</th>
+				<td class="best">
+					<ul>
+						<li>Easy-to-use wildcards pattern</li>
+						<li>RegExp</li>
+						<li>JavaScript</li>
+					</ul>
+				</td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+				<td>
+					<ul>
+						<li>RegExp</li>
+						<li>JavaScript</li>
+					</ul>
+					(with <a href="https://addons.mozilla.org/addon/downthemall-anticontainer">DownThemAll! AntiContainer</a> installed)
+				</td>
+			</tr>
+			<tr>
+				<th>Image Filtering</th>
+				<td class="best">
+					<ul>
+						<li>File size</li>
+						<li>Dimensions</li>
+						<li>Type (by MIME type and file extension)</li>
+						<li>Has-Transparency</li>
+						<li>Animated</li>
+						<li>CSS Selector</li>
+						<li>URL (wildcards and RegExp)</li>
+						<li>JavaScript judging</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>File size (only available if image is loaded and cached)</li>
+						<li>Dimensions (in display only)</li>
+						<li>Type (by file extension)</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>File size (only available if image is loaded and cached)</li>
+						<li>Dimensions</li>
+						<li>Type (by file extension)</li>
+						<li>URL (RegExp)</li>
+						<li>Same domain with page</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Type (by file extension)</li>
+						<li>URL (wildcards and RegExp)</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<th>File Re-name Pattern</th>
+				<td class="best">
+					<ul>
+						<li>Original file name (server suggested name or URL)</li>
+						<li>Image order (sequence number)</li>
+						<li>Date and time (user-defined format)</li>
+						<li>Page title</li>
+						<li>Total image count</li>
+						<li>Existing file count</li>
+						<li>Alternate text</li>
+						<li>Clipboard content</li>
+						<li>Prompt parameter</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Original file name (from URL only)</li>
+						<li>Image order (sequence number)</li>
+						<li>Date and date-time (fixed format)</li>
+						<li>Page title</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Original file name (from URL only)</li>
+						<li>Prompt (per page or per file)</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Original file name (server suggested name or URL)</li>
+						<li>URL</li>
+						<li>URL subdirectories</li>
+						<li>Alternate text</li>
+						<li>Image order (sequence number)</li>
+						<li>Total image count</li>
+						<li>Date and time (user-defined format)</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<th>Auto-Create Sub-Folder and Naming</th>
+				<td class="best">
+					<ul>
+						<li>One folder per page or single folder for multiple pages, the following parameters are available:</li>
+						<li>Date and time (user-defined format)</li>
+						<li>Page title (modifiable)</li>
+						<li>Total image count</li>
+						<li>Tab order</li>
+						<li>Existing folder count</li>
+						<li>Clipboard content</li>
+						<li>Prompt input</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Single folder</li>
+						<li>Suggests the page title (modifiable)</li>
+						<li>Suggests the folder names used before (modifiable)</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Single folder</li>
+						<li>Page title (unmodifiable)</li>
+						<li>Date, time (fixed format)</li>
+					</ul>
+				</td>
+				<td class="nan"></td>
+			</tr>
+			<tr>
+				<th>Download Manager</th>
+				<td class="best">Firefox built-in download manager</td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+				<td class="best">DownThemAll! Manager</td>
+			</tr>
+			<tr>
+				<th>Hotkeys</th>
+				<td class="nan"></td>
+				<td class="nan"></td>
+				<td class="best">✓</td>
+				<td class="nan"></td>
+			</tr>
+			<tr>
+				<th>Preferences Export / Import</th>
+				<td class="best">
+					<ul>
+						<li>All preferences</li>
+						<li>Specified preferences</li>
+					</ul>
+				</td>
+				<td class="nan"></td>
+				<td>
+					<ul>
+						<li>All preferences</li>
+					</ul>
+				</td>
+				<td class="nan"></td>
+			</tr>
+			<tr>
+				<th>Preferences Synchronization</th>
+				<td class="best">✓</td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+			</tr>
+			<tr>
+				<th>Multi-Process (e10s) Support</th>
+				<td class="best">✓</td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+				<td class="nan"></td>
+			</tr>
+			<tr>
+				<th>Languages</th>
+				<td>4 languages
+					<ul>
+						<li>English</li>
+						<li>Chinese (Traditional)</li>
+						<li>Chinese (Simplified)</li>
+						<li>Japanese</li>
+					</ul>
+				</td>
+				<td>3 languages
+					<ul>
+						<li>English</li>
+						<li>Chinese (Traditional)</li>
+						<li>Chinese (Simplified)</li>
+					</ul>
+				</td>
+				<td>6 languages
+					<ul>
+						<li>English</li>
+						<li>Chinese (Traditional)</li>
+						<li>Chinese (Simplified)</li>
+						<li>French</li>
+						<li>German</li>
+						<li>Swedish</li>
+					</ul>
+				</td>
+				<td class="best">26 languages
+					<ul>
+						<li>Arabic</li>
+						<li>Czech</li>
+						<li>German</li>
+						<li>Greek</li>
+						<li>English</li>
+						<li>Spanish (Argentina)</li>
+						<li>Spanish (Spain)</li>
+						<li>French</li>
+						<li>Gallegan</li>
+						<li>Galician</li>
+						<li>Hebrew</li>
+						<li>Hungarian</li>
+						<li>Italian</li>
+						<li>Japanese</li>
+						<li>Korean</li>
+						<li>Dutch</li>
+						<li>Occitan</li>
+						<li>Polish</li>
+						<li>Portuguese (Brazilian)</li>
+						<li>Portuguese (Portugal)</li>
+						<li>Romanian</li>
+						<li>Russian</li>
+						<li>Slovak</li>
+						<li>Serbian</li>
+						<li>Chinese (Traditional)</li>
+						<li>Chinese (Simplified)</li>
+					</ul>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
