@@ -104,7 +104,7 @@
 				</a></th>
 				<th><a href="https://addons.mozilla.org/addon/downthemall" target="_blank">
 					<img src="https://addons.cdn.mozilla.net/user-media/addon_icons/0/201-32.png">
-					DownThemAll! <span class="version">3.0.7</span>
+					DownThemAll! <span class="version">3.0.8</span>
 				</a></th>
 			</tr>
 			<tr>
@@ -280,21 +280,30 @@
 				<td class="best">✓</td>
 			</tr>
 			<tr>
-				<th>Pick and Save Images in Page Directly</th>
-				<td>
-					<ul><li>Single click (with Manual Pick mode and Auto-Save enabled)</li></ul>
+				<th>Pick Images in Page Directly</th>
+				<td class="best">
+					<ul>
+						<li>Single click</li>
+						<li>Able to save all images in specified areas</li>
+						<li>Supports all of the features provided by the extension</li>
+						<li>The picking mode needs to be activated manaully every time</li>
+					</ul>
 				</td>
 				<td class="best">
 					<ul>
-						<li>Double-click</li>
-						<li>Drag</li>
-						<li>Ctrl, Alt, Shift + Click</li>
+						<li>Double-click, drag, or Ctrl / Alt / Shift + Click</li>
+						<li>Saves one image per click</li>
+						<li>Executes Firefox built-in "Save As" command and does not support any feature provided by the extension</li>
+						<li>The picking mode can keep activated once enabled</li>
 					</ul>
 				</td>
 				<td class="nan"></td>
 				<td class="best">
 					<ul>
 						<li>Single click (dTa! Selector)</li>
+						<li>Saves one image per click</li>
+						<li>Supports most of the features provided by the extension, some features like "item number" does not work as expected</li>
+						<li>The picking mode can keep activated once enabled</li>
 					</ul>
 				</td>
 			</tr>
@@ -463,14 +472,14 @@
 				</td>
 				<td>
 					<ul>
-						<li>Handles most of the invalid characters, failure may occur in other cases (e.g. <code>U+0008</code> on Windows and incomplete unicode surrogates on Linux)</li>
+						<li>Handles most of the invalid characters, failure may occur in other cases (e.g. <code>U+0008</code> on Windows and incomplete Unicode surrogates on Linux)</li>
 						<li>Overlength names always cause failure</li>
 						<li>File names with invalid pattern always cause failure (e.g. reserved names on Windows and dot-prefixed name on Mac OS X)</li>
 					</ul>
 				</td>
 				<td>
 					<ul>
-						<li>Handles most of the invalid characters, failure may occur in other cases (e.g. <code>U+0008</code> on Windows and incomplete unicode surrogates on Linux)</li>
+						<li>Handles most of the invalid characters, failure may occur in other cases (e.g. <code>U+0008</code> on Windows and incomplete Unicode surrogates on Linux)</li>
 						<li>Cuts off overlength names, but Unicode characters on Linux and composed characters (e.g. accented letters) on Mac OS X may cause failure</li>
 						<li>File names with invalid pattern may cause unexpected behavior or failure (e.g. reserved names on Windows and dot-prefixed name on Mac OS X)</li>
 					</ul>
