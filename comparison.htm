@@ -451,18 +451,18 @@
 				<th>Special Cases Handling for File Naming</th>
 				<td>
 					<ul>
-						<li>Long names will be cut off</li>
-						<li>Invalid characters will be replaced</li>
-						<li>Invalid file name patterns will be handled</li>
+						<li>Cuts off long names</li>
+						<li>Handles invalid characters</li>
+						<li>Handles invalid file name patterns</li>
 					</ul>
 				</td>
 				<td></td>
 				<td></td>
 				<td>
 					<ul>
-						<li>Long names will be handled, but UTF-8 characters on Linux, and composed characters (e.g. letters with accent) on OS X may cause failure</li>
-						<li>Most of the invalid characters are handled</li>
-						<li>Files with invalid name pattern are handled incorrectly</li>
+						<li>Cuts off long names, but UTF-8 characters on Linux and composed characters (e.g. letters with accent) on OS X may cause failure</li>
+						<li>Handles most of the invalid characters, may cause failure in other cases</li>
+						<li>Files with invalid name pattern may cause unexpected behavior or failure</li>
 					</ul>
 				</td>
 			</tr>
