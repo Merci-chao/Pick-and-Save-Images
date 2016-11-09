@@ -451,18 +451,27 @@
 				<th>Special Cases Handling for File Naming</th>
 				<td class="best">
 					<ul>
-						<li>Cuts off long names</li>
 						<li>Handles invalid characters</li>
+						<li>Cuts off overlength names</li>
 						<li>Handles invalid file name patterns</li>
 					</ul>
 				</td>
-				<td></td>
-				<td></td>
+				<td class="nan">
+					<ul>
+						<li>Failure occurs in all cases of invalid file name</li>
+					</ul>
+				</td>
 				<td>
 					<ul>
-						<li>Cuts off long names, but Unicode characters on Linux and composed characters (e.g. accented letters) on OS X may cause failure</li>
 						<li>Handles most of the invalid characters, may cause failure in other cases (e.g. <code>U+0008</code> on Windows and incomplete unicode surrogates on Linux)</li>
-						<li>Files with invalid name pattern may cause unexpected behavior or failure (e.g. reserved names on Windows and dot-prefixed name on OS X)</li>
+						<li>Overlength names always cause failure</li>
+					</ul>
+				</td>
+				<td>
+					<ul>
+						<li>Handles most of the invalid characters, may cause failure in other cases (e.g. <code>U+0008</code> on Windows and incomplete unicode surrogates on Linux)</li>
+						<li>Cuts off overlength names, but Unicode characters on Linux and composed characters (e.g. accented letters) on Mac OS X may cause failure</li>
+						<li>Files with invalid name pattern may cause unexpected behavior or failure (e.g. reserved names on Windows and dot-prefixed name on Mac OS X)</li>
 					</ul>
 				</td>
 			</tr>
