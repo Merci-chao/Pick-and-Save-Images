@@ -411,7 +411,7 @@
 								<li>Original file name (server suggested name or from URL)</li>
 								<li>Image order (sequence number)</li>
 								<li>Numeric date and time (user-defined format)</li>
-								<li>Localized date format (month names, week days, etc.)</li>
+								<li>Localizable date format (month names, week days, etc.)</li>
 								<li>Last modified time of file (localizable)</li>
 								<li>Page title</li>
 								<li>Total images count</li>
@@ -424,7 +424,7 @@
 						<li>Special cases handling:
 							<ul>
 								<li>Long names are automatically handled</li>
-								<li>Invalid patterns and characters are automatically handled (Windows)</li>
+								<li>Invalid patterns (on Windows) and characters are handled</li>
 							</ul>
 						</li>
 					</ul>
@@ -465,7 +465,8 @@
 						<li>Special cases handling:
 							<ul>
 								<li>Long names are automatically handled</li>
-								<li>File with invalid name pattern is treated as overwriting an existing file (Windows)</li>
+								<li>Most of the invalid characters are handled (on Windows)</li>
+								<li>File with invalid name pattern (on Windows) is treated as overwriting an existing file</li>
 							</ul>
 						</li>
 					</ul>
