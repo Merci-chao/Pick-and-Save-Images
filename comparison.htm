@@ -423,8 +423,9 @@
 						</li>
 						<li>Special cases handling:
 							<ul>
-								<li>Long names are automatically handled</li>
-								<li>Invalid patterns (on Windows) and characters are handled</li>
+								<li>Long names will be cut off</li>
+								<li>Invalid characters will be replaced</li>
+								<li>Invalid file name patterns will be handled</li>
 							</ul>
 						</li>
 					</ul>
@@ -464,9 +465,9 @@
 						</li>
 						<li>Special cases handling:
 							<ul>
-								<li>Long names are automatically handled</li>
-								<li>Most of the invalid characters are handled (on Windows)</li>
-								<li>File with invalid name pattern (on Windows) is treated as overwriting an existing file</li>
+								<li>Long names will be handled, but long names including UTF-8 characters on Linux, and composed characters (e.g. letters with accent) on OS X may cause failure</li>
+								<li>Most of the invalid characters are handled</li>
+								<li>Files with invalid name pattern are handled incorrectly</li>
 							</ul>
 						</li>
 					</ul>
