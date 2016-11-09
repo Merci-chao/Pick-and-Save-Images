@@ -403,43 +403,28 @@
 				</td>
 			</tr>
 			<tr>
-				<th>File Naming</th>
+				<th>Available Patterns of File Naming</th>
 				<td class="best">
 					<ul>
-						<li>Available patterns:
-							<ul>
-								<li>Original file name (server suggested name or from URL)</li>
-								<li>Image order (sequence number)</li>
-								<li>Numeric date and time (user-defined format)</li>
-								<li>Localizable date format (month names, week days, etc.)</li>
-								<li>Last modified time of file (localizable)</li>
-								<li>Page title</li>
-								<li>Total images count</li>
-								<li>Existing files count</li>
-								<li>Alternate text</li>
-								<li>Clipboard content</li>
-								<li>Prompt parameter</li>
-							</ul>
-						</li>
-						<li>Special cases handling:
-							<ul>
-								<li>Long names will be cut off</li>
-								<li>Invalid characters will be replaced</li>
-								<li>Invalid file name patterns will be handled</li>
-							</ul>
-						</li>
+						<li>Original file name (server suggested name or from URL)</li>
+						<li>Image order (sequence number)</li>
+						<li>Numeric date and time (user-defined format)</li>
+						<li>Localizable date format (month names, week days, etc.)</li>
+						<li>Last modified time of file (localizable)</li>
+						<li>Page title</li>
+						<li>Total images count</li>
+						<li>Existing files count</li>
+						<li>Alternate text</li>
+						<li>Clipboard content</li>
+						<li>Prompt parameter</li>
 					</ul>
 				</td>
 				<td>
 					<ul>
-						<li>Available patterns:
-							<ul>
-								<li>Original file name (from URL only)</li>
-								<li>Image order (sequence number)</li>
-								<li>Numeric date and date-time (fixed format)</li>
-								<li>Page title</li>
-							</ul>
-						</li>
+						<li>Original file name (from URL only)</li>
+						<li>Image order (sequence number)</li>
+						<li>Numeric date and date-time (fixed format)</li>
+						<li>Page title</li>
 					</ul>
 				</td>
 				<td>
@@ -450,26 +435,34 @@
 				</td>
 				<td>
 					<ul>
-						<li>Available patterns:
-							<ul>
-								<li>Original file name (server suggested name or from URL)</li>
-								<li>Image order (sequence number)</li>
-								<li>Numeric date and time (user-defined format)</li>
-								<li>Total images count</li>
-								<li>URL</li>
-								<li>URL subdirectories</li>
-								<li>Page URL</li>
-								<li>Page URL subdirectories</li>
-								<li>Alternate text</li>
-							</ul>
-						</li>
-						<li>Special cases handling:
-							<ul>
-								<li>Long names will be handled, but UTF-8 characters on Linux, and composed characters (e.g. letters with accent) on OS X may cause failure</li>
-								<li>Most of the invalid characters are handled</li>
-								<li>Files with invalid name pattern are handled incorrectly</li>
-							</ul>
-						</li>
+						<li>Original file name (server suggested name or from URL)</li>
+						<li>Image order (sequence number)</li>
+						<li>Numeric date and time (user-defined format)</li>
+						<li>Total images count</li>
+						<li>URL</li>
+						<li>URL subdirectories</li>
+						<li>Page URL</li>
+						<li>Page URL subdirectories</li>
+						<li>Alternate text</li>
+					</ul>
+				</td>
+			</tr>
+			<tr>
+				<th>Special Cases Handling for File Naming</th>
+				<td>
+					<ul>
+						<li>Long names will be cut off</li>
+						<li>Invalid characters will be replaced</li>
+						<li>Invalid file name patterns will be handled</li>
+					</ul>
+				</td>
+				<td></td>
+				<td></td>
+				<td>
+					<ul>
+						<li>Long names will be handled, but UTF-8 characters on Linux, and composed characters (e.g. letters with accent) on OS X may cause failure</li>
+						<li>Most of the invalid characters are handled</li>
+						<li>Files with invalid name pattern are handled incorrectly</li>
 					</ul>
 				</td>
 			</tr>
