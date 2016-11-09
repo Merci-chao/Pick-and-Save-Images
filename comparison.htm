@@ -449,7 +449,7 @@
 			</tr>
 			<tr>
 				<th>Special Cases Handling for File Naming</th>
-				<td>
+				<td class="best">
 					<ul>
 						<li>Cuts off long names</li>
 						<li>Handles invalid characters</li>
@@ -460,9 +460,9 @@
 				<td></td>
 				<td>
 					<ul>
-						<li>Cuts off long names, but UTF-8 characters on Linux and composed characters (e.g. letters with accent) on OS X may cause failure</li>
-						<li>Handles most of the invalid characters, may cause failure in other cases</li>
-						<li>Files with invalid name pattern may cause unexpected behavior or failure</li>
+						<li>Cuts off long names, but Unicode characters on Linux and composed characters (e.g. accented letters) on OS X may cause failure</li>
+						<li>Handles most of the invalid characters, may cause failure in other cases (e.g. U+0008 on Windows and incomplete unicode surrogates on Linux)</li>
+						<li>Files with invalid name pattern may cause unexpected behavior or failure (e.g. reserved names of Windows and dot-prefixed name on OS X)</li>
 					</ul>
 				</td>
 			</tr>
