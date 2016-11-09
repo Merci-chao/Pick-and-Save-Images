@@ -406,9 +406,7 @@
 				<th>File Naming</th>
 				<td class="best">
 					<ul>
-						<li>Long names are automatically handled</li>
-						<li>Invalid patterns and characters are automatically handled</li>
-						<li>Patterns:
+						<li>Available patterns:
 							<ul>
 								<li>Original file name (server suggested name or from URL)</li>
 								<li>Image order (sequence number)</li>
@@ -423,11 +421,17 @@
 								<li>Prompt parameter</li>
 							</ul>
 						</li>
+						<li>Special cases handling:
+							<ul>
+								<li>Long names are automatically handled</li>
+								<li>Invalid patterns and characters are automatically handled (Windows)</li>
+							</ul>
+						</li>
 					</ul>
 				</td>
 				<td>
 					<ul>
-						<li>Patterns:
+						<li>Available patterns:
 							<ul>
 								<li>Original file name (from URL only)</li>
 								<li>Image order (sequence number)</li>
@@ -445,9 +449,7 @@
 				</td>
 				<td>
 					<ul>
-						<li>Long names are automatically handled</li>
-						<li>Prompt for action when any files is applied a invalid file name pattern</li>
-						<li>Patterns:
+						<li>Available patterns:
 							<ul>
 								<li>Original file name (server suggested name or from URL)</li>
 								<li>Image order (sequence number)</li>
@@ -458,6 +460,12 @@
 								<li>Page URL</li>
 								<li>Page URL subdirectories</li>
 								<li>Alternate text</li>
+							</ul>
+						</li>
+						<li>Special cases handling:
+							<ul>
+								<li>Long names are automatically handled</li>
+								<li>File with invalid name pattern is treated as overwriting an existing file (Windows)</li>
 							</ul>
 						</li>
 					</ul>
