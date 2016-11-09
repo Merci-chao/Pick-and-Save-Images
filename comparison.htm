@@ -463,13 +463,13 @@
 				</td>
 				<td>
 					<ul>
-						<li>Handles most of the invalid characters, may cause failure in other cases (e.g. <code>U+0008</code> on Windows and incomplete unicode surrogates on Linux)</li>
+						<li>Handles most of the invalid characters, failure may occur in other cases (e.g. <code>U+0008</code> on Windows and incomplete unicode surrogates on Linux)</li>
 						<li>Overlength names always cause failure</li>
 					</ul>
 				</td>
 				<td>
 					<ul>
-						<li>Handles most of the invalid characters, may cause failure in other cases (e.g. <code>U+0008</code> on Windows and incomplete unicode surrogates on Linux)</li>
+						<li>Handles most of the invalid characters, failure may occur in other cases (e.g. <code>U+0008</code> on Windows and incomplete unicode surrogates on Linux)</li>
 						<li>Cuts off overlength names, but Unicode characters on Linux and composed characters (e.g. accented letters) on Mac OS X may cause failure</li>
 						<li>Files with invalid name pattern may cause unexpected behavior or failure (e.g. reserved names on Windows and dot-prefixed name on Mac OS X)</li>
 					</ul>
